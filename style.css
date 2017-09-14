@@ -1,0 +1,112 @@
+#summaryPage {
+  display: none;
+}
+
+#drinkCount {
+  float: left;
+  padding: 5%;
+  color: purple;
+}
+
+hr {
+  color: white;
+  width: 70%;
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+}
+
+#total {
+  float: left;
+  padding: 5%;
+  color: #9932CC;
+}
+
+#summary {
+  color: white;
+}
+
+#topBlock {
+  display: table;
+}
+
+#topBlock section {
+  vertical-align: top;
+  display: table-cell;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+}
+
+td {
+  color: #9932CC;
+}
+
+td span {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Source Sans Pro Extralight
+}
+
+.table{
+  border:black;
+}
+
+.btn{
+  color:white;
+  background-color:#9932CC;
+}
+
+.bloodyMaryClass{
+  height:40px;
+  width:40px;
+  font-size:32px;
+}
+
+.margaritaClass{
+  height:40px;
+  width:40px;
+  font-size:32px;
+}
+
+.manhattanClass{
+  height:40px;
+  width:40px;
+  font-size:32px;
+}
+
+.martiniClass{
+  height:40px;
+  width:40px;
+  font-size:32px;
+}
+
+.screwDriverClass{
+  height:40px;
+  width:40px;
+  font-size:32px;
+}
+
+h3{
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
