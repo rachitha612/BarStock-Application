@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+  <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="background-color:black">
+
+
+  <div id="mainPage">
+    <div class="container">
+
+      <h1>Bar Stock</h1>
+
+      <br/>
+      <br/>
+
+
+
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <table class="table table-responsive">
+            <tr>
+              <td>Vodka</td>
+              <td><span>750</span> ML</td>
+            </tr>
+            <tr>
+              <td>Gin</td>
+              <td><span>1.5</span> L</td>
+            </tr>
+            <tr>
+              <td>Tequila</td>
+              <td><span>750</span> ML</td>
+            </tr>
+            <tr>
+              <td>Sweet Vermouth</td>
+              <td><span>750</span> ML</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-sm-3">
+          <table class="table">
+            <tr>
+              <td>Dry Vermouth</td>
+              <td><span>750</span> ML</td>
+            </tr>
+            <tr>
+              <td>Bloody Mary Mix</td>
+              <td><span>2</span> L</td>
+            </tr>
+            <tr>
+              <td>Agave Nectar</td>
+              <td><span>24</span> OZ</td>
+            </tr>
+
+          </table>
+        </div>
+
+        <div class="col-sm-3">
+          <table class="table">
+            <tr>
+              <td>Orange Juice</td>
+              <td><span>48</span> OZ</td>
+            </tr>
+            <tr>
+              <td>Whiskey</td>
+              <td><span>750</span> ML</td>
+            </tr>
+            <tr>
+              <td>Cherries</td>
+              <td><span>9</span></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-sm-3">
+          <table class="table">
+            <tr>
+              <td>Limes</td>
+              <td><span>36</span></td>
+            </tr>
+            <tr>
+              <td>Celery Sticks</td>
+              <td><span>16</span></td>
+            </tr>
+            <tr>
+              <td>Olives</td>
+              <td><span>24</span></td>
+            </tr>
+
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+  
+
+    <h1>Orders</h1>
+
+    <br/>
+    <br/>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3">
+          <h3>Bloody Mary</h3>
+          <br/>
+          <p style="color:#9932CC">2 oz Vodka
+            <br/> 4 oz Bloody Mary mix
+            <br/> 1 celery stalk
+            <br/>
+          </p>
+          <img class="img-responsive" src="http://findicons.com/files/icons/1007/crystal_like/128/plus.png" width=20px height=20px; onclick="addBloodyMary()">
+          <input class="bloodyMaryClass" type="text" value=0>
+          <img class="img-responsive" src="http://findicons.com/files/icons/2146/realistik_reloaded/128/edit_remove.png" width=20px height=20px; onclick="subBloodyMary()">
+
+        </div>
+
+
+        <div class="col-sm-2">
+          <h3>Martini</h3>
+          <br/>
+          <p style="color:#9932CC">2 oz Gin
+            <br/> 1 oz Dry Vermouth
+            <br/> 1 olive
+            <br/>
+          </p>
+          <img class="img-responsive" src="http://findicons.com/files/icons/1007/crystal_like/128/plus.png" width=20px height=20px; onclick="addMartini()">
+          <input class="martiniClass" type="text" style="height:40px;width:40px" value=0>
+          <img class="img-responsive" src="http://findicons.com/files/icons/2146/realistik_reloaded/128/edit_remove.png" width=20px height=20px; onclick="subMartini()">
+        </div>
+
+        <div class="col-sm-2">
+          <h3>Margarita</h3>
+          <br/>
+          <p style="color:#9932CC">2 oz Tequila
+            <br/> 1 oz Orange Juice
+            <br/> 1 oz Agave Nectar
+            <br/> 1 Lime
+            <br/>
+          </p>
+          <img class="img-responsive" src="http://findicons.com/files/icons/1007/crystal_like/128/plus.png" width=20px height=20px; onclick="addMargarita()">
+          <input class="margaritaClass" type="text" style="height:40px;width:40px" value=0>
+          <img class="img-responsive" src="http://findicons.com/files/icons/2146/realistik_reloaded/128/edit_remove.png" width=20px height=20px; onclick="subMargarita()">
+        </div>
+
+        <div class="col-sm-2">
+          <h3>Screw Driver</h3>
+          <br/>
+          <p  style="color:#9932CC">2 oz Vodka
+            <br/> 4 oz Orange Juice
+            <br/>
+            <br/>
+          </p>
+          <img class="img-responsive" src="http://findicons.com/files/icons/1007/crystal_like/128/plus.png" width=20px height=20px; onclick="addScrewDriver()">
+          <input class="screwDriverClass" type="text" style="height:40px;width:40px" value=0>
+          <img class="img-responsive" src="http://findicons.com/files/icons/2146/realistik_reloaded/128/edit_remove.png" width=20px height=20px; onclick="subScrewDriver()">
+        </div>
+
+
+        <div class="col-sm-3">
+          <h3>Manhattan</h3>
+          <br/>
+          <p  style="color:#9932CC">2 oz Whiskey
+            <br/> 1 oz Sweet Vermouth
+            <br/> 1 cherry
+            <br/>
+          </p>
+          <img class="img-responsive" src="http://findicons.com/files/icons/1007/crystal_like/128/plus.png" width=20px height=20px; onclick="addManhattan()">
+          <input class="manhattanClass" type="text" style="height:40px;width:40px" value=0>
+          <img class="img-responsive" src="http://findicons.com/files/icons/2146/realistik_reloaded/128/edit_remove.png" width=20px height=20px; onclick="subManhattan()">
+        </div>
+
+
+      </div>
+    </div>
+    <br/>
+    <br/>
+
+    <div class=" col-lg-12 text-center">
+      <button class="btn" type="button" onclick="summaryFunction()">Place Order</button>
+    </div>
+
+  </div>
+
+
+  <div id="summaryPage" class="text-center">
+
+    <h1>Summary</h1>
+    <br/>
+    <br/>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-6">
+          <table class="table">
+            <tr>
+              <td id="bloodyMaryCount"></td>
+              <td>Bloody Mary</td>
+            </tr>
+            <tr>
+              <td id="margaritaCount"></td>
+              <td>Margarita</td>
+            </tr>
+            <tr>
+              <td id="martiniCount"></td>
+              <td>Martini</td>
+            </tr>
+            <tr>
+              <td id="manhattanCount"></td>
+              <td>Manhattan</td>
+            </tr>
+            <tr>
+              <td id="screwDriverCount"></td>
+              <td>Screw Driver</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-sm-6">
+          <table class="table">
+            <tr>
+              <td id="totalNumberOfDrinks"></td>
+              <td>Total</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+      <div class=" col-sm-4 text-center">
+        <button class="btn" type="button" onclick="goBack()">Go Back</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
